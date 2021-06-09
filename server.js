@@ -9,7 +9,7 @@ connectDB();
 
 // Init Middleware
 app.use(express.json({ extended: false }));
-
+process.env.NODE_ENV = "development";
 
 // Define Routes
 app.use('/api/users', require('./routes/users'));
