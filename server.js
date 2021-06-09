@@ -10,6 +10,7 @@ connectDB();
 // Init Middleware
 app.use(express.json({ extended: false }));
 process.env.NODE_ENV = "development";
+console.log("NODE_ENV = " + process.env.NODE_ENV);
 
 // Define Routes
 app.use('/api/users', require('./routes/users'));
